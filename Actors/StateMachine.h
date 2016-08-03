@@ -8,6 +8,7 @@
 #include <cstdlib>
 #include <cassert>
 #include "State.h"
+#include <typeinfo>
 
 template <class entity_type>
 class StateMachine
@@ -20,24 +21,24 @@ private:
     State<entity_type>* globalState;
 
 public:
-    StateMachine(<entity_type>* actor_owner) : owner(actor_owner),
-                                               currentState(NULL),
-                                               previousState(NULL),
-                                               globalState(NULL)
+    StateMachine(entity_type* actor_owner):owner(actor_owner),
+                                             currentState(NULL),
+                                             previousState(NULL),
+                                             globalState(NULL)
     {}
 
     //setters
-    void setCurrentState(entity_type* s)
+    void setCurrentState(State<entity_type>* s)
     {
         currentState = s;
     }
 
-    void setPreviousState(entity_type* s)
+    void setPreviousState(State<entity_type>* s)
     {
         previousState = s;
     }
 
-    void setGlobalState(entity_type* s)
+    void setGlobalState(State<entity_type>* s)
     {
         globalState = s;
     }

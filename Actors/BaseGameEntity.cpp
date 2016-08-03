@@ -5,6 +5,7 @@
 #include <cassert>
 #include "BaseGameEntity.h"
 
+int BaseGameEntity::m_iNextValidID = 0;
 
 //----------------------------- SetID -----------------------------------------
 //

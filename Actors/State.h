@@ -4,6 +4,7 @@
 
 #ifndef GAMEAI_STATE_H
 #define GAMEAI_STATE_H
+
 template <class entity_type>
 class State
 {
