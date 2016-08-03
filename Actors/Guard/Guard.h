@@ -26,6 +26,8 @@ private:
 
     int arrows;
 
+    int patrolRounds;
+
 public:
     Guard(int id):location(loc_barracks),
                   thirst(0),
@@ -40,6 +42,7 @@ public:
 
     ~Guard(){delete stateMachine;};
 
+    int getPatrolRounds(){return patrolRounds;}
     int getThirst(){return thirst;}
     int getFatigue(){return fatigue;}
     int getArrows(){return arrows;}
@@ -48,12 +51,16 @@ public:
     void incrementFatigue(int i){fatigue += i;}
     void incrementThirst(int i){thirst += i;}
     void incrementArrows(int i){arrows += i;}
+    void decrementPatrolRounds(int i){patrolRounds -= 1;}
     void setThirst(int i){thirst = i;}
     void setFatigue(int i){fatigue = i;}
     void setArrows(int i){arrows = i;}
     void setLocation(location_type p_location){location = p_location;}
 
-    void changeState(){}
+    void changeState(State<Guard>* s)
+    {
+        stateMachine->changeState(s);
+    }
 
 };
 #endif //GAMEAI_GUARD_H

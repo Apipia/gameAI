@@ -35,11 +35,51 @@ private:
 
     Resting(){}
     Resting(const Resting&);
-    Resting& operator=(const Patrol&);
+    Resting& operator=(const Resting&);
 
 public:
 
     static Resting* Instance();
+
+    virtual void Enter(Guard* guard);
+
+    virtual void Execute(Guard* guard);
+
+    virtual void Exit(Guard* guard);
+
+};
+
+class Archary : public State<Guard>
+{
+private:
+
+    Archary(){}
+    Archary(const Archary&);
+    Archary& operator=(const Archary&);
+
+public:
+
+    static Archary* Instance();
+
+    virtual void Enter(Guard* guard);
+
+    virtual void Execute(Guard* guard);
+
+    virtual void Exit(Guard* guard);
+
+};
+
+class Pub : public State<Guard>
+{
+private:
+
+    Pub(){}
+    Pub(const Pub&);
+    Pub& operator=(const Pub&);
+
+public:
+
+    static Pub* Instance();
 
     virtual void Enter(Guard* guard);
 
