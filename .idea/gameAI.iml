@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Actors/StateMachine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Actors/EntityNames.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Actors/Guard/Guard.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Actors/Guard/Patrol.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Actors/BaseGameEntity.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Actors/BaseGameEntity.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Actors/location_type.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Actors/State.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/local/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/local/include" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
