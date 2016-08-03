@@ -7,6 +7,7 @@
 
 #include "../BaseGameEntity.h"
 #include "../StateMachine.h"
+#include "../location_type.h"
 
 class Guard : public BaseGameEntity
 {
