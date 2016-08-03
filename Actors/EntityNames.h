@@ -10,7 +10,8 @@
 
 enum
 {
-    ent_guard
+    ent_guard,
+    ent_ninja
 };
 
 inline std::string getNameOfEntity(int n)
@@ -20,7 +21,8 @@ inline std::string getNameOfEntity(int n)
         case ent_guard:
             return "Guard";
 
-        //case...
+        case ent_ninja:
+            return "Ninja";
     }
 
 }

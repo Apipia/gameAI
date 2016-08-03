@@ -4,5 +4,11 @@
 
 #ifndef GAMEAI_LOCATION_TYPE_H
 #define GAMEAI_LOCATION_TYPE_H
-
+git
+enum location_type {
+    loc_barracks,
+    loc_archaryRange,
+    loc_pub,
+    loc_patrolRoute
+};
 #endif //GAMEAI_LOCATION_TYPE_H
