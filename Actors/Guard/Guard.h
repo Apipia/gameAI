@@ -35,5 +35,6 @@ public:
     void setThirst(int i){thirst = i;}
     void setFatigue(int i){fatigue = i;}
     void setArrows(int i){arrows = i;}
+    void setLocation(location_type p_location){location = p_location;}
 };
 #endif //GAMEAI_GUARD_H

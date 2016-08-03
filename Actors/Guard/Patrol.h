@@ -27,7 +27,7 @@ public:
     {
         std::cout << "\n" << getNameOfEntity(guard->ID()) << ": "
                   << "Man this is boring...";
-        guard
+        guard->setLocation(loc_patrolRoute);
     }
 };
 #endif //GAMEAI_PATROL_H
