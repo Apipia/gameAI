@@ -44,6 +44,8 @@ public:
         stateMachine->setCurrentState(Resting::Instance());
     }
 
+    void Update() {stateMachine->update();}
+
     ~Guard(){delete stateMachine;};
 
     int getPatrolRounds(){return patrolRounds;}
@@ -56,8 +58,8 @@ public:
     void incrementThirst(int i){thirst += i;}
     void incrementArrows(int i){arrows += i;}
 
-    void decrementFatigue(int i){arrows -= i;}
-    void decrementPatrolRounds(int i){patrolRounds -= 1;}
+    void decrementFatigue(int i){fatigue -= i;}
+    void decrementPatrolRounds(int i){patrolRounds -= i;}
     void decrementThirst(int i){thirst -= i;}
     void decrementArrows(int i){arrows -= i;}
 

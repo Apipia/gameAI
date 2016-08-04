@@ -23,6 +23,9 @@ inline std::string getNameOfEntity(int n)
 
         case ent_ninja:
             return "Ninja";
+
+        default:
+            return "Invalid ID";
     }
 
 }

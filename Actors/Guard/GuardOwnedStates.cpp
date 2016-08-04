@@ -37,7 +37,7 @@ void Patrol::Execute(Guard *guard)
     guard->incrementThirst(8);
     guard->decrementPatrolRounds(1);
 
-    if (guard->getPatrolRounds() >= 5)
+    if (guard->getPatrolRounds() == 0)
     {
         if (guard->getThirst() >= 100)
             guard->changeState(Pub::Instance());
@@ -55,6 +55,12 @@ void Patrol::Exit(Guard *guard)
 }
 
 //================RESTING:
+
+Resting* Resting::Instance()
+{
+    static Resting instance;
+    return &instance;
+}
 
 void Resting::Enter(Guard *guard)
 {
@@ -83,6 +89,12 @@ void Resting::Exit(Guard *guard)
 }
 
 //================ARCHERY:
+
+Archery* Archery::Instance()
+{
+    static Archery instance;
+    return &instance;
+}
 
 void Archery::Enter(Guard *guard)
 {
@@ -123,6 +135,12 @@ void Archery::Exit(Guard *guard)
 }
 
 //================PUB:
+
+Pub* Pub::Instance()
+{
+    static Pub instance;
+    return &instance;
+}
 
 void Pub::Enter(Guard *guard)
 {
