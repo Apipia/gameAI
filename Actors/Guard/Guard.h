@@ -51,6 +51,7 @@ public:
     void incrementFatigue(int i){fatigue += i;}
     void incrementThirst(int i){thirst += i;}
     void incrementArrows(int i){arrows += i;}
+    void decrementFatigue(int i){arrows -= i;}
     void decrementPatrolRounds(int i){patrolRounds -= 1;}
     void setThirst(int i){thirst = i;}
     void setFatigue(int i){fatigue = i;}

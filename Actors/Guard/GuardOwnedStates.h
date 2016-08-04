@@ -49,17 +49,17 @@ public:
 
 };
 
-class Archary : public State<Guard>
+class Archery : public State<Guard>
 {
 private:
 
-    Archary(){}
-    Archary(const Archary&);
-    Archary& operator=(const Archary&);
+    Archery(){}
+    Archery(const Archery&);
+    Archery& operator=(const Archery&);
 
 public:
 
-    static Archary* Instance();
+    static Archery* Instance();
 
     virtual void Enter(Guard* guard);
 
