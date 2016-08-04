@@ -7,7 +7,7 @@
 
 enum location_type {
     loc_barracks,
-    loc_archaryRange,
+    loc_archeryRange,
     loc_pub,
     loc_patrolRoute
 };

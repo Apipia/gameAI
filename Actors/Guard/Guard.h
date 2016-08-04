@@ -20,6 +20,7 @@ private:
     //like Hunger, Location, etc.
     location_type location;
 
+
     int thirst;
 
     int fatigue;
@@ -29,6 +30,9 @@ private:
     int patrolRounds;
 
 public:
+
+    int const ASSIGNED_PATROL_ROUNDS = 5;
+
     Guard(int id):location(loc_barracks),
                   thirst(0),
                   fatigue(0),
@@ -51,8 +55,13 @@ public:
     void incrementFatigue(int i){fatigue += i;}
     void incrementThirst(int i){thirst += i;}
     void incrementArrows(int i){arrows += i;}
+
     void decrementFatigue(int i){arrows -= i;}
     void decrementPatrolRounds(int i){patrolRounds -= 1;}
+    void decrementThirst(int i){thirst -= i;}
+    void decrementArrows(int i){arrows -= i;}
+
+    void setPatrolRounds(int i){patrolRounds = i;}
     void setThirst(int i){thirst = i;}
     void setFatigue(int i){fatigue = i;}
     void setArrows(int i){arrows = i;}
